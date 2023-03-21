@@ -1,7 +1,7 @@
 
 from django.urls import  path
-from .views import main
+from .views import MusicRoomView
 
 urlpatterns = [
-    path('home', main)      
+    path('room', MusicRoomView.as_view())      
 ]
